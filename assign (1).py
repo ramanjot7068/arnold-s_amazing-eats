@@ -124,13 +124,13 @@ def tip(total):
 
         if tipPercent == "10" or tipPercent == "10%":
             validInput = True
-            tipAmount = total * 0.1
+            tipAmount = float(total * 0.1)
         elif tipPercent == "15" or tipPercent == "15%":
             validInput = True
-            tipAmount = total * 0.15
+            tipAmount = float(total * 0.15)
         elif tipPercent == "20" or tipPercent == "20%":
             validInput = True
-            tipAmount = total * 0.2
+            tipAmount = float(total * 0.2)
         else:
             print("Please enter 10, 15 or 20 to proceed")
     return tipAmount
